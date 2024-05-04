@@ -1,30 +1,26 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <NavBar></NavBar>
+  <div class="w-max bg-no-repeat bg-cover bg-center" style="background-size: 100% auto;">
+    <img src="./assets/dentistAi.png" class="h-max w-max filter grayscale" alt="Flowbite Logo"></img>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <Footer></Footer>
+  </template>
+  
+<script>
+import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
+  export default {
+    components: {
+      NavBar,
+      Footer
+    },
+  data() {
+    return {
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+    }
+  },
+  methods: {
+
+  }
+  }
+</script>
